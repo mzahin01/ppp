@@ -1,0 +1,70 @@
+name: prank_er_baccha
+description: A new Flutter project.
+
+
+publish_to: 'none' 
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.1.1 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_screenutil: ^5.9.0
+  audioplayers: ^5.2.0
+  cupertino_icons: ^1.0.2
+  get: ^4.6.6
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^2.0.0
+
+
+flutter:
+  uses-material-design: true
+
+  
+  assets:
+    - assets/TelRakh.mp3
+    - assets/SlapOg.mp3
+    - assets/FightingFast.mp3
+    - assets/FightingSlow.mp3
+    - assets/Aayein.mp3
+    - assets/Salam.mp3
+    - assets/Walekum.mp3
+    - assets/Punch.mp3
+    - assets/Acchatainaki.mp3
+    - assets/acchathikase.mp3
+    - assets/bujsi.mp3
+    - assets/OOOOO.mp3
+    - assets/Polbol.mp3
+    - assets/dhorechi.mp3
+    - assets/jamin.mp3
+
+  
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
