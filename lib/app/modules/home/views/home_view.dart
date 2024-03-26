@@ -25,7 +25,7 @@ class HomeView extends GetView<HomeController> {
                 ),
                 SoundContainer(
                   fileName: 'Punch.mp3',
-                  containerTitle: 'Punch',
+                  containerTitle: 'Puncch',
                   color: Colors.brown,
                   width: 200.0,
                   controller: controller,
@@ -108,30 +108,30 @@ class HomeView extends GetView<HomeController> {
                 SoundContainer(
                   fileName: 'Acchatainaki.mp3',
                   containerTitle: 'Acchatainaki',
-                  color: Colors.green, // Example color
+                  color: Colors.green,
                   width: 200.0,
-                  controller: controller, // Example width
+                  controller: controller,
                 ),
                 SoundContainer(
                   fileName: 'acchathikase.mp3',
                   containerTitle: 'acchathikase',
-                  color: Colors.blue, // Example color
+                  color: Colors.blue,
                   width: 200.0,
-                  controller: controller, // Example width
+                  controller: controller,
                 ),
                 SoundContainer(
                   fileName: 'bujsi.mp3',
                   containerTitle: 'bujsi',
-                  color: Colors.red, // Example color
+                  color: Colors.red,
                   width: 200.0,
-                  controller: controller, // Example width
+                  controller: controller,
                 ),
                 SoundContainer(
                   fileName: 'OOOOO.mp3',
                   containerTitle: 'OOOOO',
-                  color: Colors.yellow, // Example color
+                  color: Colors.yellow,
                   width: 200.0,
-                  controller: controller, // Example width
+                  controller: controller,
                 ),
                 const SizedBox(
                   width: 20,
@@ -149,23 +149,23 @@ class HomeView extends GetView<HomeController> {
                 SoundContainer(
                   fileName: 'Polbol.mp3',
                   containerTitle: 'Polbol',
-                  color: Colors.purple, // Example color
+                  color: Colors.purple,
                   width: 200.0,
-                  controller: controller, // Example width
+                  controller: controller,
                 ),
                 SoundContainer(
                   fileName: 'dhorechi.mp3',
                   containerTitle: 'dhorechi',
-                  color: Colors.orange, // Example color
+                  color: Colors.orange,
                   width: 200.0,
-                  controller: controller, // Example width
+                  controller: controller,
                 ),
                 SoundContainer(
                   fileName: 'jamin.mp3',
                   containerTitle: 'jamin',
-                  color: Colors.teal, // Example color
+                  color: Colors.teal,
                   width: 200.0,
-                  controller: controller, // Example width
+                  controller: controller,
                 ),
                 const SizedBox(
                   width: 20,

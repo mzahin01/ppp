@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:prank_er_baccha/app/modules/home/controllers/home_controller.dart';
 
-class SoundContainer extends StatelessWidget {
+class SoundContainer extends StatefulWidget {
   final String fileName;
   final String containerTitle;
   final Color? color;
@@ -18,32 +18,49 @@ class SoundContainer extends StatelessWidget {
   }) : super(key: key);
 
   @override
+  State<SoundContainer> createState() => _SoundContainerState();
+}
+
+class _SoundContainerState extends State<SoundContainer> {
+  bool _isPlaying = true;
+
+  updateIsPlaying() {
+    setState(() {
+      _isPlaying = true;
+    });
+  }
+
+  @override
   Widget build(BuildContext context) {
     return Expanded(
       child: Container(
-        width: width,
+        width: widget.width,
         decoration: BoxDecoration(
-          color: color ?? Colors.blue, // Use provided color or default to blue
+          color: widget.color ?? Colors.blue,
         ),
         child: InkWell(
           onTap: () {
-            controller.playSound(fileName);
+            setState(() {
+              _isPlaying = !_isPlaying;
+            });
+            widget.controller
+                .playSound(widget.fileName, _isPlaying, updateIsPlaying);
           },
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
-              const Icon(
-                Icons.music_note,
-                size: 50.0, // Increased icon size
+              Icon(
+                _isPlaying ? Icons.play_arrow : Icons.pause,
+                size: 50.0,
                 color: Colors.white,
               ),
               const SizedBox(height: 10.0),
               Text(
-                containerTitle,
+                widget.containerTitle,
                 style: const TextStyle(
                   color: Colors.white,
-                  fontSize: 18.0, // Increased text size
+                  fontSize: 18.0,
                 ),
               ),
             ],
